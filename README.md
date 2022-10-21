@@ -12,11 +12,15 @@ Polygon Mumbai: https://mumbai.polygonscan.com/
 
 ## Contract Creation
 
-OpenZeppeling: https://docs.openzeppelin.com/contracts/4.x/wizard
+OpenZeppelin: https://docs.openzeppelin.com/contracts/4.x/wizard
 
 ## Contract Deployment
 
 Remix: https://remix.ethereum.org/
+
+## NFT URI
+
+Pinata: https://www.pinata.cloud/
 
 ## Packages
 
