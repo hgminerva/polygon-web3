@@ -10,9 +10,9 @@ async function main() {
     const abi = JSON.parse(fs.readFileSync("./evolution_gem_abi.json"));
     let contract = new web3.eth.Contract(abi, process.env.TOKEN_CONTRACT);
 
-    let owner = await contract.methods.totalSupply().call();
+    let supply = await contract.methods.totalSupply().call();
 
-    console.log(owner);
+    console.log(supply);
 }
 
 main().catch(console.error).finally(() => process.exit());
