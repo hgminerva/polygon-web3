@@ -19,7 +19,7 @@ async function main() {
         to: nftContract,
         nonce: nonce,
         gas: 500000,
-        data: contract.methods.safeTransferFrom(walletAddress1, walletAddress2, 1).encodeABI(),
+        data: contract.methods.safeTransferFrom(walletAddress1, walletAddress2, 2).encodeABI(),
     };
     const signPromise = await web3.eth.accounts.signTransaction(
         transaction,

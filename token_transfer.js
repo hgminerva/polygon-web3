@@ -19,7 +19,7 @@ async function main() {
         to: tokenContract,
         nonce: nonce,
         gas: 500000,
-        data: contract.methods.transfer(walletAddress2, 10).encodeABI(),
+        data: contract.methods.transfer(walletAddress2, 100).encodeABI(),
     };
     const signPromise = await web3.eth.accounts.signTransaction(
         transaction,

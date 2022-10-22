@@ -18,7 +18,7 @@ async function main() {
         to: tokenContract,
         nonce: nonce,
         gas: 500000,
-        data: contract.methods.mint(200000).encodeABI(),
+        data: contract.methods.mint(100000).encodeABI(),
     };
     const signPromise = await web3.eth.accounts.signTransaction(
         transaction,

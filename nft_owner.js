@@ -10,8 +10,10 @@ async function main() {
     const web3 = new Web3(new Web3.providers.HttpProvider(testnet));
     const abi = JSON.parse(fs.readFileSync("./bnft_abi.json"));
     let contract = new web3.eth.Contract(abi, nftContract);
-    let owner =  await contract.methods.ownerOf(1).call();
-    console.log(owner);
+    let owner1 =  await contract.methods.ownerOf(1).call();
+    console.log(owner1);
+    let owner2 =  await contract.methods.ownerOf(2).call();
+    console.log(owner2);
 }
 
 main().catch(console.error).finally(() => process.exit());

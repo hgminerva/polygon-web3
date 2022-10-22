@@ -18,7 +18,7 @@ async function main() {
         to: nftContract,
         nonce: nonce,
         gas: 500000,
-        data: contract.methods.safeMint(walletAddress,1,"https://gateway.pinata.cloud/ipfs/QmaYuG1oV8Njh4MwtJ6CuzYuhBFfL9xfAiC3b13vtG2mZc").encodeABI(),
+        data: contract.methods.safeMint(walletAddress,2,"https://gateway.pinata.cloud/ipfs/QmTWTJkfiic9WisPmps6sM4mSANTQjKydowF2AcwArUb6P").encodeABI(),
     };
     const signPromise = await web3.eth.accounts.signTransaction(
         transaction,

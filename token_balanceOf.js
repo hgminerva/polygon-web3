@@ -12,7 +12,7 @@ async function main() {
     const web3 = new Web3(new Web3.providers.HttpProvider(testnet));
     const abi = JSON.parse(fs.readFileSync("./evolution_gem_abi.json"));
     let contract = new web3.eth.Contract(abi, tokenContract);
-    let balance =  await contract.methods.balanceOf(walletAddress2).call();
+    let balance =  await contract.methods.balanceOf(walletAddress1).call();
     console.log(balance);
 }
 
